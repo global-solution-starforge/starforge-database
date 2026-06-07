@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6448ADB7-3B55-3904-8038-F3840F56D86F" name="TB_ORGANIZACAO">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:30:40 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="44AEF895-E8A8-1AD0-6AB8-218AB7D10AE5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_ORGANIZACAO" id="02D075EE-1F54-7CA5-F316-A15F03703388">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:30:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="44AEF895-E8A8-1AD0-6AB8-218AB7D10AE5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_ORGANIZACAO" id="6D760DA3-1243-CCBA-C408-B960ABC2514C">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:30:57 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="44AEF895-E8A8-1AD0-6AB8-218AB7D10AE5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="02092B8F-64F5-755C-6E52-ED8950D0AF3B" name="TB_ORGANIZACAO PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:30:54 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="44AEF895-E8A8-1AD0-6AB8-218AB7D10AE5" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>02D075EE-1F54-7CA5-F316-A15F03703388</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

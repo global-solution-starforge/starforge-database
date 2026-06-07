@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D64EAEE1-E6A8-BE54-350F-88CF0B93F83B" name="TB_CONTRIBUICAO">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:49:38 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_CONTRIBUICAO" id="45997EA7-2F10-F728-8E03-F20B118C1414">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:49:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_CONTRIBUICAO" id="3F90633A-95DD-3D98-2AB7-324A8E35CCE8">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:50:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor contribuído em R$ ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STT_CONTRIBUICAO" id="17F43D0F-5095-617F-536D-C7212E3082A9">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:50:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[PENDENTE, CONFIRMADO, REEMBOLSADO ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<constraintName>TB_CONTRIBUICAO_STATUS_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="CONFIRMADO" description=""/>
+<valueDef value="PENDENTE" description=""/>
+<valueDef value="REEMBOLSADO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MTD_PGT_CONTRIBUICAO" id="C09C2C8D-F719-5874-E6C6-9586A8C58E09">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:51:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Metodo de pagamento]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<constraintName>TB_CONTRIBUICAO_METD_PGTO_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="CREDITO" description=""/>
+<valueDef value="DEBITO" description=""/>
+<valueDef value="PIX" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CONTRIBUICAO" id="D8BECAD0-C44C-D4B0-C559-2B027C2B1EAE">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:52:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da contribuicao]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_USUARIO" id="DA146AF7-C765-716F-7A68-3653F7381654">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:57:17 UTC</createdTime>
+<generatorID>2DA4E99D-0E12-DD69-4A33-BFEB914FCC2A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<referedAttribute>425FEF4C-4ADC-41B5-D1A7-25F4A5EFC684</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_MISSAO" id="09220F80-2056-0359-D03F-B60F85353222">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:57:41 UTC</createdTime>
+<generatorID>5D34BFBD-363D-B282-2D94-B71556227613</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<referedAttribute>95D6E165-1504-5C75-0907-DA79FE01AC84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_TIER" id="3F9DDD64-DBFF-FFBF-C708-0D92749068CB">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:58:03 UTC</createdTime>
+<generatorID>CDAAE6CA-B2F1-DA85-2AC2-0B8DE957D868</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<referedAttribute>A702414B-EBF9-3CD4-4CBC-16F8CA6E074B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B2588E86-6117-428A-4683-2A07ADC78575" name="TB_CONTRIBUICAO PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:50:04 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>45997EA7-2F10-F728-8E03-F20B118C1414</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

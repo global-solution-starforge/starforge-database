@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42C6FA97-677B-1098-B629-B755B391C3D5" name="TB_CONTRIBUICAO">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>D64EAEE1-E6A8-BE54-350F-88CF0B93F83B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CONTRIBUICAO" id="A72B090B-CC5F-0313-3B34-3CF9D53E2070">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<generatorID>45997EA7-2F10-F728-8E03-F20B118C1414</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_CONTRIBUICAO" id="EF0C422E-F389-03FA-85AC-7D9E6B4E33BB">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor contribuído em R$ ]]></commentInRDBMS>
+<generatorID>3F90633A-95DD-3D98-2AB7-324A8E35CCE8</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STT_CONTRIBUICAO" id="5980FEE6-19F5-23FA-8CDD-39FA70AC4CE8">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[PENDENTE, CONFIRMADO, REEMBOLSADO ]]></commentInRDBMS>
+<generatorID>17F43D0F-5095-617F-536D-C7212E3082A9</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<constraintName>TB_CONTRIBUICAO_STATUS_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="CONFIRMADO" description=""/>
+<valueDef value="PENDENTE" description=""/>
+<valueDef value="REEMBOLSADO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MTD_PGT_CONTRIBUICAO" id="2F8F0023-6552-D0D9-E47D-E653F57BBD0C">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Metodo de pagamento]]></commentInRDBMS>
+<generatorID>C09C2C8D-F719-5874-E6C6-9586A8C58E09</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<constraintName>TB_CONTRIBUICAO_METD_PGTO_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="CREDITO" description=""/>
+<valueDef value="DEBITO" description=""/>
+<valueDef value="PIX" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CONTRIBUICAO" id="66E5EC78-74EC-EECF-EBE4-143D27BEE55C">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da contribuicao]]></commentInRDBMS>
+<generatorID>D8BECAD0-C44C-D4B0-C559-2B027C2B1EAE</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_USUARIO_ID_USUARIO" id="9877C305-4742-CE77-C819-7D1F0C35B680">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>DA146AF7-C765-716F-7A68-3653F7381654</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD92D407-80D0-00CE-9156-107520CEED20" referredColumn="1278D58C-510E-08AF-5033-2BE4E56A2CC5"/>
+</associations>
+</Column>
+<Column name="TB_MISSAO_ID_MISSAO" id="F639D184-D652-5080-4E09-E18A758157B3">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>09220F80-2056-0359-D03F-B60F85353222</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD23F095-5ABC-54C0-1DD6-46963ADF9AB0" referredColumn="35CAEC3D-C71D-3265-B9E3-F0B01FD37DB0"/>
+</associations>
+</Column>
+<Column name="TB_TIER_ID_TIER" id="3E716B84-D7EC-C0F3-432A-0776648D438C">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>3F9DDD64-DBFF-FFBF-C708-0D92749068CB</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6ED9748F-C67A-FA9C-E1E0-A9979B83C271" referredColumn="0C808992-C0B4-14A6-DFBD-37B813D99A66"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9BE06A1-30D4-824D-EB50-A121C803C6F0" name="TB_CONTRIBUICAO_PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>B2588E86-6117-428A-4683-2A07ADC78575</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A72B090B-CC5F-0313-3B34-3CF9D53E2070"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="365099A1-7675-D8EC-CF3E-A7213ED4831B" name="TB_CONTRIBUICAO_TB_USUARIO_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>2DA4E99D-0E12-DD69-4A33-BFEB914FCC2A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9877C305-4742-CE77-C819-7D1F0C35B680"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B2055F3-B16C-D395-1170-0753AB9185BF" name="TB_CONTRIBUICAO_TB_MISSAO_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>5D34BFBD-363D-B282-2D94-B71556227613</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F639D184-D652-5080-4E09-E18A758157B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A76DD5DD-5AC2-19EB-108C-203F7A6C4C06" name="TB_CONTRIBUICAO_TB_TIER_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>CDAAE6CA-B2F1-DA85-2AC2-0B8DE957D868</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E716B84-D7EC-C0F3-432A-0776648D438C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

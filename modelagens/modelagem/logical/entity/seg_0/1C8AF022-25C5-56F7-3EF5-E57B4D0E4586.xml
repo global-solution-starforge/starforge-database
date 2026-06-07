@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C8AF022-25C5-56F7-3EF5-E57B4D0E4586" name="TB_NAVE">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:43:12 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_NAVE" id="B9E2F415-3A2D-B731-8804-4DA061C62F2A">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:46:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_NAVE" id="6DF42656-77BF-B0C4-BE54-1A65122FD7AA">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:46:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[ex: Sabiá-X, Tucano-Prime ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CLS_NAVE" id="592E3944-7438-0BB0-B68B-ED2BEBF3A9D1">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:47:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[ex: INTERCEPTADOR LEVE, TRANSPORTE PESADO ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IMG_URL_NAVE" id="3547933F-7A50-CDE6-0F4E-4E2EAA2486A1">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:48:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[URL da imagem da nave]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_MISSAO" id="479A4E70-27C3-5B02-2754-8437B897230B">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:54:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[A missao eh criada primeiro]]></commentInRDBMS>
+<generatorID>3A405721-5F3D-0132-EAC3-784C200273E7</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<referedAttribute>95D6E165-1504-5C75-0907-DA79FE01AC84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="50FB79E0-2D22-BFE3-BB37-2DC8DB977684" name="TB_NAVE PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:46:46 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B9E2F415-3A2D-B731-8804-4DA061C62F2A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

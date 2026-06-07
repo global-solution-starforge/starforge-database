@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0ECF8D32-F17C-5161-2B54-F2CE572987DF" name="TB_NAVE">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>1C8AF022-25C5-56F7-3EF5-E57B4D0E4586</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_NAVE" id="2D99B9A8-5B34-56F2-9BA6-4EBA5528EFAD">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<generatorID>B9E2F415-3A2D-B731-8804-4DA061C62F2A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_NAVE" id="9F9F5252-F246-5429-7055-75FE24F37500">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[ex: Sabiá-X, Tucano-Prime ]]></commentInRDBMS>
+<generatorID>6DF42656-77BF-B0C4-BE54-1A65122FD7AA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLS_NAVE" id="9E7AFDBA-68F5-4141-58C3-E68CC5404DE3">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[ex: INTERCEPTADOR LEVE, TRANSPORTE PESADO ]]></commentInRDBMS>
+<generatorID>592E3944-7438-0BB0-B68B-ED2BEBF3A9D1</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMG_URL_NAVE" id="95882F26-9CFB-7CA1-2A4E-1D5974FC7622">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[URL da imagem da nave]]></commentInRDBMS>
+<generatorID>3547933F-7A50-CDE6-0F4E-4E2EAA2486A1</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_MISSAO_ID_MISSAO" id="D683ED11-DBCD-900D-65A8-0C5F57004941">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[A missao eh criada primeiro]]></commentInRDBMS>
+<generatorID>479A4E70-27C3-5B02-2754-8437B897230B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA1FE308-459A-9506-91BA-BCF096EDF495" referredColumn="35CAEC3D-C71D-3265-B9E3-F0B01FD37DB0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45FA75AB-EE69-E872-424F-4E5A8D07FFA5" name="TB_NAVE_PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>50FB79E0-2D22-BFE3-BB37-2DC8DB977684</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D99B9A8-5B34-56F2-9BA6-4EBA5528EFAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B12080E4-2E95-72FD-F736-A29465BE30C5" name="TB_NAVE__IDX">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3A405721-5F3D-0132-EAC3-784C200273E7</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D683ED11-DBCD-900D-65A8-0C5F57004941"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1FC6E4E-C4C8-C618-59EF-67C0A29F373E" name="TB_NAVE_TB_MISSAO_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>3A405721-5F3D-0132-EAC3-784C200273E7</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D683ED11-DBCD-900D-65A8-0C5F57004941"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

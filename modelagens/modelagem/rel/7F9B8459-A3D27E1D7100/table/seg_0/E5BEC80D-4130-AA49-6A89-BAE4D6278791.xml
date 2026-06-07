@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5BEC80D-4130-AA49-6A89-BAE4D6278791" name="TB_FASE_MISSAO">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<comment><![CDATA[Cronograma de construção da missão exibido na tela de Transparência/Impacto. Cada fase tem status e percentual de progresso. ]]></comment>
+<generatorID>C5D4058F-700E-E65B-2CA8-F4F05FD76DA0</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_FASE_MISSAO" id="CBF0D8A3-6524-0C98-C76B-C5679801006B">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<generatorID>745A6A00-ADB6-B13C-B65D-5A1446890C87</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NMR_FASE_MISSAO" id="12E489FE-A02F-CC28-0D62-DA5391C97D7C">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ordem da fase — 1, 2, 3, 4 ]]></commentInRDBMS>
+<generatorID>3B45E52D-8D89-75A5-A433-8C8715AC0CD8</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<constraintName>TB_FASE_MISSAO_NUMERO_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>4</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="NM_FASE_MISSAO" id="15F1E2EE-0BD1-2CE9-A640-0FB7C0716607">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[ex: Integração do Payload ]]></commentInRDBMS>
+<generatorID>F2FD1F2A-B848-022C-D293-0414021A0DE2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_FASE_MISSAO" id="8AA9B78A-51F4-005D-1BA0-C583C164D2FC">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descricao tecnica da fase]]></commentInRDBMS>
+<generatorID>424EDF0C-9EF4-3B86-680F-F2DEBAB799A8</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STT_FASE" id="ADE1ECAA-A5D3-C3EB-A99D-3E11C066990F">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>C5C34760-30FF-66FF-7673-013A77C769C9</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<constraintName>TB_FASE_MISSAO_STATUS_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="AGUARDANDO" description=""/>
+<valueDef value="CONCLUIDO" description=""/>
+<valueDef value="EM ANDAMENTO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PCT_FASE_MISSAO" id="0158FDF6-289C-582D-16BE-FF2AA5F68F46">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Progresso da fase - 0.00 a 100.00 (percentual ja calculado)]]></commentInRDBMS>
+<generatorID>D1606924-6CDC-F183-E7FC-60808EEA88B8</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<constraintName>TB_FASE_MISSAO_PORCENT_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>100</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="TB_MISSAO_ID_MISSAO" id="14FC3922-F518-A1BA-DE7E-A555F2F96558">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>A0671E73-E5E4-2CB7-B52E-847A8EA9863A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4939A0B1-AD3D-8406-25AD-85CFFCB41A6A" referredColumn="35CAEC3D-C71D-3265-B9E3-F0B01FD37DB0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3AD669A-F822-8058-A741-DB9ADC2AFE98" name="TB_FASE_MISSAO_PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>33AA78D8-546C-BAE4-BE8A-4364C1F3251E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBF0D8A3-6524-0C98-C76B-C5679801006B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DA26032-9C07-D8EB-977A-BBB861A86362" name="TB_FASE_MISSAO__IDX">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1957E3C1-2F0E-00C5-91F5-4CE2AFBE4CE5</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="14FC3922-F518-A1BA-DE7E-A555F2F96558"/>
+<colUsage columnID="12E489FE-A02F-CC28-0D62-DA5391C97D7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFBBED13-0428-8C22-210C-01C9F506C5C0" name="TB_FASE_MISSAO_TB_MISSAO_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>1957E3C1-2F0E-00C5-91F5-4CE2AFBE4CE5</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14FC3922-F518-A1BA-DE7E-A555F2F96558"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

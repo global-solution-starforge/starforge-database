@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6ED9748F-C67A-FA9C-E1E0-A9979B83C271" containerWithKeyObject="42C6FA97-677B-1098-B629-B755B391C3D5" localFKIndex="A76DD5DD-5AC2-19EB-108C-203F7A6C4C06" name="TB_CONTRIBUICAO_TB_TIER_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>CDAAE6CA-B2F1-DA85-2AC2-0B8DE957D868</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>TB_TIER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE0D935F-DF78-558D-4CE6-5529BDC1BFEF</referredTableID>
+<keyObject>6A943F94-3FA8-7482-AD80-2E05EE807DB6</keyObject>
+<referredKeyID>6A943F94-3FA8-7482-AD80-2E05EE807DB6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TIER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

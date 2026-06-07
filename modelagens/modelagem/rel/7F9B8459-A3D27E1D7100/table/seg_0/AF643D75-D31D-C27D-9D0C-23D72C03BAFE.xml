@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF643D75-D31D-C27D-9D0C-23D72C03BAFE" name="TB_HANGAR">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<comment><![CDATA[ Uma nave entra com status PENDENTE quando o usuário contribuiu o valor mínimo, e muda para DESBLOQUEADA quando a missão é concluída. ]]></comment>
+<generatorID>8BBAE49F-1678-5C79-5AC4-C4CF64A09880</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_HANGAR" id="2838B4DB-00AC-C80E-EED4-1A8BA86A6619">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<generatorID>346B41A9-7B1F-923D-BB06-42AA59A51AE3</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_DESBLQ_NAVE_HANGAR" id="0B63DA58-AD68-9341-A405-71EEF04C5044">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que a nave foi desbloqueada]]></commentInRDBMS>
+<generatorID>C85CC12E-9802-BA7F-9E25-371BD669016E</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_NAVE_HANGAR" id="8313B979-C7F6-7DB9-4A5B-07F2AD8966FA">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>F589264D-BAB3-A3AC-8DA3-94FFB8D8CD97</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<constraintName>TB_HANGAR_STATUS_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="DESBLOQUEADA" description=""/>
+<valueDef value="PENDENTE" description=""/>
+</listOfValues>
+<defaultValue>PENDENTE</defaultValue>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_GRAVADO_HANGAR" id="56BAC3DB-C138-5DB0-E0B8-F9068B66CD42">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[NULL - nao Comandante]]></commentInRDBMS>
+<generatorID>69CF8D5D-EA3F-8F89-1044-80A161851CFF</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_NAVE_ID_NAVE" id="13B7ABAF-979E-7DC8-A98E-5181731A31A1">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>41672B67-0501-2875-DDE7-6C29AFC7011F</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9556E9D1-9657-E614-1939-57858693B66B" referredColumn="2D99B9A8-5B34-56F2-9BA6-4EBA5528EFAD"/>
+</associations>
+</Column>
+<Column name="TB_CONTRIB_ID_CONTRIB" id="293C9032-8708-DA9E-E39E-0BC9BAF21CE5">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>13A338AD-1712-E534-EE26-664860ADF829</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75056375-9D9A-B8D8-0DDB-53C956BE7C2E" referredColumn="A72B090B-CC5F-0313-3B34-3CF9D53E2070"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0603B70-71A6-EE6F-DDB2-DDD8A6367B2A" name="TB_HANGAR_PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>ADD3F708-BDD6-7412-FA90-3FB519924766</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2838B4DB-00AC-C80E-EED4-1A8BA86A6619"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFBA158D-21E5-5CC1-BA95-D1201DD07EEE" name="TB_HANGAR__IDX">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E196A154-67AF-8AF8-C9EE-36C35D05BDA2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="293C9032-8708-DA9E-E39E-0BC9BAF21CE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="717E1BD3-8642-33FE-8B8D-181384A3A809" name="TB_HANGAR_TB_CONTRIBUICAO_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>E196A154-67AF-8AF8-C9EE-36C35D05BDA2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="293C9032-8708-DA9E-E39E-0BC9BAF21CE5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81B8BFEE-4B5B-91C2-0DDB-7527190FF8BF" name="TB_HANGAR_TB_NAVE_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>7837C2F8-BFA2-E37C-DA16-B6A4FB641197</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13B7ABAF-979E-7DC8-A98E-5181731A31A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

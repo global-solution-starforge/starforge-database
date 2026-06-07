@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A729CA71-3A15-6744-48D9-CF1A61C28540" name="TB_AGENCIA">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:35:56 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_AGENCIA" id="2D07C5B8-C6CD-92C6-4B71-E89DE67ED1B9">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:36:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID	]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_AGENCIA" id="6C4CE65D-F894-83BA-494F-493680317A2C">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:36:37 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="50419455-7AAE-C826-1E14-D6A64118FEA3" name="TB_AGENCIA PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:36:33 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2D07C5B8-C6CD-92C6-4B71-E89DE67ED1B9</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7FA1D4AE-1B54-4C53-DB67-1524D0F4EEEE" name="TB_AGENCIA_NOME_UK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:21:01 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<newElementsIDs>6C4CE65D-F894-83BA-494F-493680317A2C</newElementsIDs>
+<usedAttributes>
+<attributeRef>6C4CE65D-F894-83BA-494F-493680317A2C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,27 @@
+Output esperado ao executar dados/carga_100_registros.sql em um schema limpo apos ddl/schema.sql
+
+5 rows inserted.
+5 rows inserted.
+3 rows inserted.
+30 rows inserted.
+10 rows inserted.
+10 rows inserted.
+40 rows inserted.
+30 rows inserted.
+10 rows inserted.
+
+Commit complete.
+
+TABELA             TOTAL
+------------------ -----
+TB_AGENCIA             5
+TB_CONTRIBUICAO       30
+TB_FASE_MISSAO        40
+TB_HANGAR             10
+TB_MISSAO             10
+TB_NAVE               10
+TB_ORGANIZACAO         5
+TB_TIER                3
+TB_USUARIO            30
+
+Total de registros inseridos: 143

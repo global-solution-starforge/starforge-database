@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F6DCAA2-6B2A-A861-AD5A-3DB5CD3EE0DF" name="TB_TIER">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:43:44 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_TIER" id="A702414B-EBF9-3CD4-4CBC-16F8CA6E074B">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:43:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_TIER" id="D16099A1-FD80-3E32-EEBB-5292693FC9D0">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:44:06 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<constraintName>TB_TIER_NOME_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="APOIADOR" description=""/>
+<valueDef value="COMANDANTE" description=""/>
+<valueDef value="OPERATIVO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_MIN_TIER" id="45026771-DFBE-2CF6-4D58-B30E7CA8102D">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:44:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor mínimo para o tier — ex: 50, 100, 500 ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FL_ACESSO_ANT_TIER" id="B7F81287-913D-F09F-3F74-A648FD2BBBEA">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:27:58 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<constraintName>TB_TIER_FL_ACESSO_ANT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_TIER" id="51F2C23F-9EE7-EDD6-723F-7EB822FCB2B2">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:45:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Beneficios do tier]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6ED8B357-6AAC-5C5E-1E02-7F61C6FEDE09" name="TB_TIER PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:44:02 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A702414B-EBF9-3CD4-4CBC-16F8CA6E074B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="713811D9-7C3A-F85F-C6B6-1B8336E47B49" name="TB_TIER_NOME">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 12:59:31 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<newElementsIDs>D16099A1-FD80-3E32-EEBB-5292693FC9D0</newElementsIDs>
+<usedAttributes>
+<attributeRef>D16099A1-FD80-3E32-EEBB-5292693FC9D0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

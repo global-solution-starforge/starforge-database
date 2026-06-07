@@ -1,0 +1,276 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A76540CF-BCAE-B9B7-1451-2BCE94AE7DDA" name="TB_MISSAO">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>173042F9-A4FB-052E-6ABD-E967417D8BFF</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MISSAO" id="35CAEC3D-C71D-3265-B9E3-F0B01FD37DB0">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<generatorID>95D6E165-1504-5C75-0907-DA79FE01AC84</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_MISSAO" id="914DB4B0-EF3E-4728-3B26-DDB20A916A30">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da missão — ex: AMZ-01, LAT-02 ]]></commentInRDBMS>
+<generatorID>DDF3FD5B-9896-BAC7-BB1D-2F9BB771D2CA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_MISSAO" id="1043C561-775B-4911-8186-F751F2293A66">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>A7F9E34A-3FF4-3E28-068A-176A7746E9FD</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_MISSAO" id="D7721145-C368-16F2-ECE3-2B1BAFB3B411">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Briefing completo da missao]]></commentInRDBMS>
+<generatorID>E5494255-B004-3CED-F700-6F16FEC3A095</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STT_MISSAO" id="E0FCAB84-1E87-0D40-E79C-B0E664E6264A">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[ATIVA, CONCLUIDA, FALHOU]]></commentInRDBMS>
+<generatorID>FE709FE4-87C9-C93F-C5E0-BDD17F9BF317</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<constraintName>TB_MISSAO_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="ATIVA" description=""/>
+<valueDef value="CONCLUIDA" description=""/>
+<valueDef value="CRIACAO" description=""/>
+<valueDef value="FALHOU" description=""/>
+</listOfValues>
+<defaultValue>CRIACAO</defaultValue>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_META_MISSAO" id="648C1D2D-14D0-4607-DDC7-3A29B048F4AC">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Meta de financiamento da missao]]></commentInRDBMS>
+<generatorID>79353133-627F-DBAD-C2DD-32B959AFD13F</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_LIMITE" id="5B5D68D9-FAA4-5656-F8A5-34FF530CCC7A">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data final de financiamento]]></commentInRDBMS>
+<generatorID>183CF10B-1BEF-B4AD-D6F2-CF6D118885BC</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_ORB_MISSAO" id="7652E220-1A87-91C7-CD7F-A10FC689E091">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de órbita — ex: SSO, LEO ]]></commentInRDBMS>
+<generatorID>2AD8C31C-7D98-1EB6-D2B0-E2B785FD24E9</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VD_UTIL_MISSAO" id="82833399-8A87-5DFD-743A-1B1438E427DF">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[VIDA UTIL: duracao estimada - Ex: 3 ANOS]]></commentInRDBMS>
+<generatorID>AF6ED850-55EC-3F28-65DE-455E4399CE44</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CG_UTIL_MISSAO" id="B138309B-4EFE-8940-3564-4B64E3F3549C">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[CARGA UTIL: Payload — ex: CÂMERA MULTIESPECTRAL ]]></commentInRDBMS>
+<generatorID>2D0FD88C-0D5E-5351-5052-16F4E3D033EE</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COORD_LAT_MISSAO" id="C8E53138-6ACC-A8E5-0C90-7119262C65C0">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitute da area monitorada]]></commentInRDBMS>
+<generatorID>58D94E87-8136-8FD3-B1FC-A526FE299CD5</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COORD_LNG_MISSAO" id="6244BE80-AA10-742C-EA64-0DF4EC9CFA51">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longitude da area monitorada]]></commentInRDBMS>
+<generatorID>BBFFE7B1-A452-645D-72C5-F3B6EFD36A03</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BADG_MISSAO" id="BEE5FA21-2DDB-4C57-0724-F50995043338">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Badge exclusivo - Ex: Acesso Ouro, Modulo VIP]]></commentInRDBMS>
+<generatorID>5CB22BAE-128E-97B7-6A24-4D43F67A7583</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_ORGANIZACAO_ID_ORGANIZACAO" id="2AF70E9A-9834-2F7B-6613-F808BDC97584">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>2224450D-2906-88CB-40F6-64B01D467AE4</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6099D989-794A-88CC-02B2-07332E1B5DCF" referredColumn="09AEB680-8892-F30C-8CF8-387A69D1A6ED"/>
+</associations>
+</Column>
+<Column name="TB_AGENCIA_ID_AGENCIA" id="F82D7E06-D814-608B-A2E9-74272B79E07F">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>A073AB84-C0DF-699D-6F3E-0AEC6D4C9C31</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00EC4B3F-0585-CC34-F786-8B1524520ABA" referredColumn="16B20D12-A70A-6246-A560-9D8FE3E63AAA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5665609E-D591-78D0-E9AF-F88152322974" name="TB_MISSAO_PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>AA67F161-137B-1F9B-E79C-E91E9FC99C70</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35CAEC3D-C71D-3265-B9E3-F0B01FD37DB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD421F37-ACDB-446A-188E-B8D0E5060587" name="TB_MISSAO_CD_MISSAO_UN">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>B4C4B11D-7FDC-252E-3820-0DB541E4BAE1</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="914DB4B0-EF3E-4728-3B26-DDB20A916A30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2981F3DC-BE61-8F2E-CBF5-7BB67AD19130" name="TB_MISSAO_TB_ORGANIZACAO_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>E709C5C4-C311-6BC3-E51A-9A8244624A32</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AF70E9A-9834-2F7B-6613-F808BDC97584"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9684461-BF01-2B8D-6184-B871BFD12D84" name="TB_MISSAO_TB_AGENCIA_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>869FA644-EFAA-20C3-AF9C-D3C88E0337DB</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F82D7E06-D814-608B-A2E9-74272B79E07F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

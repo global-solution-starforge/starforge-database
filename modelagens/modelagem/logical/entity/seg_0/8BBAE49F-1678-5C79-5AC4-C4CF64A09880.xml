@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8BBAE49F-1678-5C79-5AC4-C4CF64A09880" name="TB_HANGAR">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:59:33 UTC</createdTime>
+<comment><![CDATA[ Uma nave entra com status PENDENTE quando o usuário contribuiu o valor mínimo, e muda para DESBLOQUEADA quando a missão é concluída. ]]></comment>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_HANGAR" id="346B41A9-7B1F-923D-BB06-42AA59A51AE3">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 13:59:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_DESBLQ_NAVE_HANGAR" id="C85CC12E-9802-BA7F-9E25-371BD669016E">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:01:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que a nave foi desbloqueada]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATUS_NAVE_HANGAR" id="F589264D-BAB3-A3AC-8DA3-94FFB8D8CD97">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:01:59 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<constraintName>TB_HANGAR_STATUS_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="DESBLOQUEADA" description=""/>
+<valueDef value="PENDENTE" description=""/>
+</listOfValues>
+<defaultValue>PENDENTE</defaultValue>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_GRAVADO_HANGAR" id="69CF8D5D-EA3F-8F89-1044-80A161851CFF">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:56:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[NULL - nao Comandante]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_NAVE" id="41672B67-0501-2875-DDE7-6C29AFC7011F">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:05:59 UTC</createdTime>
+<generatorID>7837C2F8-BFA2-E37C-DA16-B6A4FB641197</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<referedAttribute>B9E2F415-3A2D-B731-8804-4DA061C62F2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CONTRIBUICAO" id="13A338AD-1712-E534-EE26-664860ADF829">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:02:48 UTC</createdTime>
+<generatorID>E196A154-67AF-8AF8-C9EE-36C35D05BDA2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<referedAttribute>45997EA7-2F10-F728-8E03-F20B118C1414</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ADD3F708-BDD6-7412-FA90-3FB519924766" name="TB_HANGAR PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:01:10 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>346B41A9-7B1F-923D-BB06-42AA59A51AE3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

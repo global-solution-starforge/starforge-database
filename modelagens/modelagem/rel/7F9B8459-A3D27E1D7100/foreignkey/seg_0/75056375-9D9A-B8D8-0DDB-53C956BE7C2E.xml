@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="75056375-9D9A-B8D8-0DDB-53C956BE7C2E" containerWithKeyObject="AF643D75-D31D-C27D-9D0C-23D72C03BAFE" localFKIndex="717E1BD3-8642-33FE-8B8D-181384A3A809" name="TB_HANGAR_TB_CONTRIBUICAO_FK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>E196A154-67AF-8AF8-C9EE-36C35D05BDA2</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<referredTableLongName>TB_CONTRIBUICAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>42C6FA97-677B-1098-B629-B755B391C3D5</referredTableID>
+<keyObject>C9BE06A1-30D4-824D-EB50-A121C803C6F0</keyObject>
+<referredKeyID>C9BE06A1-30D4-824D-EB50-A121C803C6F0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CONTRIBUICAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

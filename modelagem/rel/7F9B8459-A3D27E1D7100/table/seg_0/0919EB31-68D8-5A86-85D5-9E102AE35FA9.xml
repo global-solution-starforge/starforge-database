@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0919EB31-68D8-5A86-85D5-9E102AE35FA9" name="TB_USUARIO">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<comment><![CDATA[Armazena os dados do piloto/jogador. O campo nivel é atualizado automaticamente por trigger conforme o total contribuído aumenta. ]]></comment>
+<generatorID>66EE3EE3-4C72-F397-24DA-0A9D34C311DA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="1278D58C-510E-08AF-5033-2BE4E56A2CC5">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<generatorID>425FEF4C-4ADC-41B5-D1A7-25F4A5EFC684</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RL_USUARIO" id="62A53AD0-1C62-BBC9-2060-AE410CD48F9C">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 11:15:01 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_USUARIO" id="D48B96E8-2124-FE80-B99E-CA2A4CCEF87C">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>C7BAB2CE-2543-6616-3765-F3DED3375DDF</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EM_USUARIO" id="838ABA00-E4CD-EEB4-28FB-77776078F6E0">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>8F331224-6E57-989C-B2A1-1233DAE4957A</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEN_HASH_USUARIO" id="7E43E826-85E6-33EF-8534-948C82062A24">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>C761EFC2-C08B-A49B-DC1E-2CE579AB06BF</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STT_USUARIO" id="AD82EBA3-BB3A-0DB5-C4C7-EF04DA57F7DD">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA['ATIVO' OU 'INATIVO']]></commentInRDBMS>
+<generatorID>7838E631-4193-97F0-7DDF-B122D3749D4B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<constraintName>TB_USUARIO_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="ATIVO" description=""/>
+<valueDef value="INATIVO" description=""/>
+</listOfValues>
+<defaultValue>ATIVO</defaultValue>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CADST_USUARIO" id="2B7C2731-7F0B-CA05-53F4-B6EC28660165">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATA DE CADASTRO]]></commentInRDBMS>
+<generatorID>BB5EFFC9-B40B-0AD1-391C-94D558EABC8B</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E588B167-49F7-302C-8EC9-2D949F5DC902" name="TB_USUARIO_PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>E282CF81-0901-D428-8154-7D0FAC4E75CA</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1278D58C-510E-08AF-5033-2BE4E56A2CC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2583E8EC-D2A5-CBDD-69A3-FCE3AAEC19E2" name="TB_USUARIO_EM_USUARIO_UN">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 08:30:55 UTC</createdTime>
+<generatorID>5B680D4D-A636-5E43-0B23-C828474DCFF3</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="838ABA00-E4CD-EEB4-28FB-77776078F6E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

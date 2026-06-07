@@ -1,0 +1,273 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="173042F9-A4FB-052E-6ABD-E967417D8BFF" name="TB_MISSAO">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:29:17 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_MISSAO" id="95D6E165-1504-5C75-0907-DA79FE01AC84">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:29:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_MISSAO" id="DDF3FD5B-9896-BAC7-BB1D-2F9BB771D2CA">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:29:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da missão — ex: AMZ-01, LAT-02 ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_MISSAO" id="A7F9E34A-3FF4-3E28-068A-176A7746E9FD">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:30:39 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_MISSAO" id="E5494255-B004-3CED-F700-6F16FEC3A095">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:33:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Briefing completo da missao]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STT_MISSAO" id="FE709FE4-87C9-C93F-C5E0-BDD17F9BF317">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:35:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[ATIVA, CONCLUIDA, FALHOU]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<constraintName>TB_MISSAO_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="ATIVA" description=""/>
+<valueDef value="CONCLUIDA" description=""/>
+<valueDef value="CRIACAO" description=""/>
+<valueDef value="FALHOU" description=""/>
+</listOfValues>
+<defaultValue>CRIACAO</defaultValue>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_META_MISSAO" id="79353133-627F-DBAD-C2DD-32B959AFD13F">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:34:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Meta de financiamento da missao]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_LIMITE" id="183CF10B-1BEF-B4AD-D6F2-CF6D118885BC">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:40:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data final de financiamento]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_ORB_MISSAO" id="2AD8C31C-7D98-1EB6-D2B0-E2B785FD24E9">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:40:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de órbita — ex: SSO, LEO ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VD_UTIL_MISSAO" id="AF6ED850-55EC-3F28-65DE-455E4399CE44">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:42:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[VIDA UTIL: duracao estimada - Ex: 3 ANOS]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CG_UTIL_MISSAO" id="2D0FD88C-0D5E-5351-5052-16F4E3D033EE">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:43:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[CARGA UTIL: Payload — ex: CÂMERA MULTIESPECTRAL ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COORD_LAT_MISSAO" id="58D94E87-8136-8FD3-B1FC-A526FE299CD5">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:47:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Latitute da area monitorada]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COORD_LNG_MISSAO" id="BBFFE7B1-A452-645D-72C5-F3B6EFD36A03">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:48:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Longitude da area monitorada]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,10,6</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BADG_MISSAO" id="5CB22BAE-128E-97B7-6A24-4D43F67A7583">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:49:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Badge exclusivo - Ex: Acesso Ouro, Modulo VIP]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_ORGANIZACAO" id="2224450D-2906-88CB-40F6-64B01D467AE4">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:31:23 UTC</createdTime>
+<generatorID>E709C5C4-C311-6BC3-E51A-9A8244624A32</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<referedAttribute>02D075EE-1F54-7CA5-F316-A15F03703388</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_AGENCIA" id="A073AB84-C0DF-699D-6F3E-0AEC6D4C9C31">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-07 07:37:45 UTC</createdTime>
+<generatorID>869FA644-EFAA-20C3-AF9C-D3C88E0337DB</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<referedAttribute>2D07C5B8-C6CD-92C6-4B71-E89DE67ED1B9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AA67F161-137B-1F9B-E79C-E91E9FC99C70" name="TB_MISSAO PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:29:46 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95D6E165-1504-5C75-0907-DA79FE01AC84</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B4C4B11D-7FDC-252E-3820-0DB541E4BAE1" name="TB_MISSAO_CODIGO_UK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 11:32:50 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<newElementsIDs>DDF3FD5B-9896-BAC7-BB1D-2F9BB771D2CA</newElementsIDs>
+<usedAttributes>
+<attributeRef>DDF3FD5B-9896-BAC7-BB1D-2F9BB771D2CA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

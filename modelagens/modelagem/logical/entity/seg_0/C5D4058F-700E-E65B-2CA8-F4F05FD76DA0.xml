@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C5D4058F-700E-E65B-2CA8-F4F05FD76DA0" name="TB_FASE_MISSAO">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:09:37 UTC</createdTime>
+<comment><![CDATA[Cronograma de construção da missão exibido na tela de Transparência/Impacto. Cada fase tem status e percentual de progresso. ]]></comment>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_FASE_MISSAO" id="745A6A00-ADB6-B13C-B65D-5A1446890C87">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:09:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[UUID]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NMR_FASE_MISSAO" id="3B45E52D-8D89-75A5-A433-8C8715AC0CD8">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:10:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ordem da fase — 1, 2, 3, 4 ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<constraintName>TB_FASE_MISSAO_NUMERO_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>4</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="NM_FASE_MISSAO" id="F2FD1F2A-B848-022C-D293-0414021A0DE2">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:12:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[ex: Integração do Payload ]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_FASE_MISSAO" id="424EDF0C-9EF4-3B86-680F-F2DEBAB799A8">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:12:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descricao tecnica da fase]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STT_FASE" id="C5C34760-30FF-66FF-7673-013A77C769C9">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:13:18 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<constraintName>TB_FASE_MISSAO_STATUS_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="AGUARDANDO" description=""/>
+<valueDef value="CONCLUIDO" description=""/>
+<valueDef value="EM ANDAMENTO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PCT_FASE_MISSAO" id="D1606924-6CDC-F183-E7FC-60808EEA88B8">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:14:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Progresso da fase - 0.00 a 100.00 (percentual ja calculado)]]></commentInRDBMS>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<constraintName>TB_FASE_MISSAO_PORCENT_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>100</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ID_MISSAO" id="A0671E73-E5E4-2CB7-B52E-847A8EA9863A">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:17:01 UTC</createdTime>
+<generatorID>1957E3C1-2F0E-00C5-91F5-4CE2AFBE4CE5</generatorID>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<referedAttribute>95D6E165-1504-5C75-0907-DA79FE01AC84</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
+<ownDataTypeParameters>36 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="33AA78D8-546C-BAE4-BE8A-4364C1F3251E" name="TB_FASE_MISSAO PK">
+<createdBy>gabriel</createdBy>
+<createdTime>2026-06-06 14:10:17 UTC</createdTime>
+<ownerDesignName>modelagem</ownerDesignName>
+<engineerTo>
+<item key="7F9B8459-DABB-3000-2B8B-A3D27E1D7100" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>745A6A00-ADB6-B13C-B65D-5A1446890C87</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
