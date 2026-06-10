@@ -1,10 +1,23 @@
 # Starforge Database - Oracle SQL e PL/SQL
 
+## Integrantes
+
+| Nome | RM |
+|---|---|
+| Anna Clara Russo Luca | RM561928 |
+| Gabriel Duarte Maciel | RM565754 |
+| Gustavo Tavares da Silva | RM562827 |
+| Tiago Guedes da Costa | RM564731 |
+
+> **Turma:** 2TDSPW - FIAP 2026
+---
+
+
 ## Visao Geral
 
-Esta solucao complementa o DDL fornecido para o sistema Starforge, uma plataforma ficticia de financiamento coletivo para missoes espaciais. O banco registra agencias, organizacoes, missoes, fases tecnicas, naves, usuarios, tiers de apoio, contribuicoes financeiras e desbloqueios de naves no hangar digital.
+StarForge é um jogo de crowdfunding espacial onde jogadores financiam missões reais de CubeSats brasileiros e recebem naves exclusivas quando a meta de financiamento é atingida coletivamente. 
 
-O objetivo da entrega e demonstrar dominio de Oracle SQL e PL/SQL por meio de massa de dados consistente, blocos anonimos com regras de negocio, relatorios analiticos e scripts de teste.
+A lógica é similar à mineração de Bitcoin: o item só é liberado quando a missão é completamente financiada. O projeto conecta a economia espacial com engajamento popular, criando um canal direto entre cidadãos e o setor aeroespacial privado brasileiro. 
 
 ## Requisitos Atendidos
 
